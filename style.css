@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+}
+
+/*NAV BAR START*/
+nav {
+  display: flex;
+  align-items: center;
+  height: 8vh;
+  width: 100%;
+  position: fixed;
+  font-size: 22px;
+  justify-content: space-around;
+  padding: 1.5rem 3.5rem;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  background: -webkit-linear-gradient(left, rgb(0, 225, 255), rgb(0, 17, 255));
+  color: white;
+}
+
+nav li {
+  display: inline-block;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: white;
+}
+
+nav li a:hover {
+  border-bottom: 3px solid white;
+}
+/*NAV BAR END*/
+
+/*HERO SECTION*/
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero img {
+  height: 60%;
+}
+
+.hero h1 {
+  font-size: 50px;
+  background: -webkit-linear-gradient(left, rgb(0, 225, 255), rgb(0, 17, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  font-size: 20px;
+  padding: 0.3rem 0;
+  line-height: 1.7rem;
+  color: gray;
+}
+
+.bio {
+  width: 25rem;
+  padding: 0.625rem;
+  margin-bottom: 100px;
+}
+/*HERO SECTION END*/
+
+/*ABOUT SECTION*/
+.about {
+  padding: 6rem 6rem;
+  height: auto;
+}
+
+.about h2 {
+  text-align: center;
+  background: -webkit-linear-gradient(left, rgb(0, 225, 255), rgb(0, 17, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 35px;
+  margin: 20px 0px;
+}
+
+.about p {
+  line-height: 1.7rem;
+  padding: 0.4rem;
+}
+
+/*SKILLS*/
+.skills {
+  max-width: 68.75rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.icon {
+  width: 11.875rem;
+  height: 11.25rem;
+}
+
+.icon-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  margin: 10px;
+}
+
+.icon:hover {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+  transition: 0.3s;
+}
+
+/*PROJECTS SECTION*/
+.projects {
+  padding: 6rem 6rem;
+  margin-top: 2rem;
+  height: auto;
+  background-color: rgba(202, 194, 194, 0.2);
+}
+
+.project-pic {
+  width: 100%;
+  height: 100%;
+}
+
+.projects-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  background: -webkit-linear-gradient(left, rgb(0, 225, 255), rgb(0, 17, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 35px;
+}
+
+.project-container {
+  text-align: center;
+  width: 21.875rem;
+  padding: 1rem;
+}
+
+.project-container p {
+  padding: 0.4rem;
+}
+
+.project-title {
+  margin-bottom: 0.5rem;
+}
+
+.project-details {
+  margin-bottom: 0.5rem;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  margin: 20px;
+}
+
+/*CONTACT SECTION*/
+.contact {
+  margin-top: 2rem;
+  height: auto;
+  padding: 6rem 6rem;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  background: -webkit-linear-gradient(left, rgb(0, 225, 255), rgb(0, 17, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-form-container {
+  max-width: 40.75rem;
+  margin: 0 auto;
+  padding: 0.938rem;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px #000000;
+}
+
+.contact-form-container label {
+  line-height: 2.7em;
+  font-weight: 700;
+  color: black;
+}
+
+.contact-form-container textarea {
+  min-height: 6.25rem;
+  font-size: 14px;
+}
+
+.contact-form-container .input-field {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  border: 2px outset black;
+  font-size: 0.875rem;
+  outline: none;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #fff;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: -webkit-linear-gradient(left, rgb(0, 225, 255), rgb(0, 17, 255));
+  border: 2px solid #4756df;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/*FOOTER SECTION*/
+footer {
+  background: -webkit-linear-gradient(left, rgb(0, 225, 255), rgb(0, 17, 255));
+  padding: 1.25rem;
+  text-align: center;
+  margin: 2rem 0 0;
+  color: white;
+}
