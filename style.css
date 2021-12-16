@@ -40,6 +40,15 @@ nav ul a {
 nav li a:hover {
   border-bottom: 3px solid white;
 }
+
+.burger-menu {
+  color: #fcfcfc;
+  font-size: 2rem;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+}
 /*NAV BAR END*/
 
 /*HERO SECTION*/
@@ -258,4 +267,99 @@ footer {
 
 .footer-icons a {
   text-decoration: none;
+}
+
+@media screen and (max-width: 720px) {
+  /*changes reflects on screen with a width of 720px and below*/
+  nav {
+    padding: 1.5rem 1rem;
+  }
+
+  nav ul {
+    position: fixed;
+    background: -webkit-linear-gradient(
+      left,
+      rgb(0, 225, 255),
+      rgb(0, 17, 255)
+    );
+    border-radius: 11px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    flex-direction: column;
+    top: 86px;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    transform: translateX(120%);
+    transition: transform 0.5s ease-in;
+  }
+
+  nav ul li {
+    margin: 8px;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  nav ul.show {
+    transform: translateX(0);
+  }
+
+  .hero {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .bio {
+    margin-top: 15rem;
+    width: 20.5rem;
+  }
+
+  .about {
+    margin-top: 8rem;
+    padding: 1rem 3.5rem;
+  }
+
+  .about h2 {
+    text-align: center;
+  }
+
+  .about p {
+    text-align: justify;
+  }
+
+  .icon {
+    width: 5.875rem;
+    height: 5.25rem;
+  }
+
+  .projects-container {
+    flex-direction: column;
+  }
+
+  .project-container {
+    width: 20.875rem;
+  }
+  .contact-form-container {
+    max-width: 23.75rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .hero img {
+    height: 37.5rem;
+    width: 23rem;
+  }
+
+  .bio {
+    width: 18.3rem;
+  }
+
+  .project-container {
+    width: 17.875rem;
+  }
+
+  .contact-form-container {
+    max-width: 17.75rem;
+  }
 }
