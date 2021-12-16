@@ -188,6 +188,7 @@ nav li a:hover {
   background: -webkit-linear-gradient(left, rgb(0, 225, 255), rgb(0, 17, 255));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 35px;
 }
 
 .contact-form-container {
