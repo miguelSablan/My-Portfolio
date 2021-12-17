@@ -183,14 +183,18 @@ nav li a:hover {
 .project-card {
   background-color: #fff;
   border-radius: 11px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
   padding: 20px;
   margin: 20px;
 }
 
+.project-container:hover {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+  transition: 0.3s;
+}
+
 /*CONTACT SECTION*/
 .contact {
-  margin-top: 2rem;
   height: auto;
   padding: 6rem 6rem;
 }
@@ -340,6 +344,7 @@ footer {
   .project-container {
     width: 20.875rem;
   }
+
   .contact-form-container {
     max-width: 23.75rem;
   }
