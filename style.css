@@ -148,15 +148,12 @@ nav li a:hover {
 
 /*ABOUT SECTION*/
 .about {
-  padding: 6rem 6rem;
+  padding: 6rem 24rem;
   height: auto;
 }
 
 .about h2 {
   text-align: center;
-  background: -webkit-linear-gradient(left, rgb(0, 225, 255), rgb(0, 17, 255));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   font-size: 35px;
   margin: 20px 0px;
 }
