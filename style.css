@@ -41,7 +41,9 @@ nav ul a {
 }
 
 nav li a:hover {
-  border-bottom: 3px solid white;
+  /*border-bottom: 3px solid white;*/
+  color: rgb(248, 213, 11);
+  transition: 0.3s ease;
 }
 
 .burger-menu {
@@ -333,11 +335,7 @@ footer {
 
   nav ul {
     position: fixed;
-    background: -webkit-linear-gradient(
-      left,
-      rgb(0, 225, 255),
-      rgb(0, 17, 255)
-    );
+    background-color: #1b1b1b;
     border-radius: 11px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
     flex-direction: column;
@@ -403,11 +401,6 @@ footer {
 }
 
 @media screen and (max-width: 420px) {
-  .hero img {
-    height: 37.5rem;
-    width: 23rem;
-  }
-
   .bio {
     width: 18.3rem;
   }
